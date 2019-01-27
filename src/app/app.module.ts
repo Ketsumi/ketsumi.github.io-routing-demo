@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonModule } from './person/person.module';
 import { StatusModule } from './status/status.module';
+import { PetModule } from './pet/pet.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { StatusModule } from './status/status.module';
     BrowserModule,
     AppRoutingModule,
     PersonModule,
-    StatusModule
+    StatusModule,
+    PetModule
   ],
   providers: [],
   bootstrap: [AppComponent]
