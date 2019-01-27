@@ -9,8 +9,7 @@ const routes: Routes = [{
 	component: PersonComponent,
 	children: [{
 		path: 'list',
-		component: PersonListComponent,
-		// outlet: 'second'
+		component: PersonListComponent
 	}]
 }];
 
