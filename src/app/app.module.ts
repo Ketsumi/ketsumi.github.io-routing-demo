@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonModule } from './person/person.module';
-import { StatusModule } from './status/status.module';
 import { PetModule } from './pet/pet.module';
+
+import { StatusModule } from './status/status.module';
 
 @NgModule({
   declarations: [
