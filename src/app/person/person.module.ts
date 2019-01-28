@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { PersonRoutingModule } from './person-routing.module';
 import { PersonComponent } from './person.component';
 import { PersonListComponent } from './person-list.component';
-import { PersonRoutingModule } from './person-routing.module';
 
 @NgModule({
   imports: [

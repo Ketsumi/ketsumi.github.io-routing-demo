@@ -10,8 +10,11 @@ const routes: Routes = [{
 	children: [{
 		path: '404',
 		component: StatusCode404Component
-	}],
-	{ path: '**', redirectTo: '/status/404', pathMatch: 'full' }
+	}], {
+		path: '**',
+		redirectTo: '/status/404',
+		pathMatch: 'full'
+	}
 }];
 
 @NgModule({
