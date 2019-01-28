@@ -3,10 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StatusModule } from './status/status.module';
 import { PersonModule } from './person/person.module';
 import { PetModule } from './pet/pet.module';
-
-import { StatusModule } from './status/status.module';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,8 @@ import { StatusModule } from './status/status.module';
     BrowserModule,
     AppRoutingModule,
     PersonModule,
-    StatusModule,
-    PetModule
+    PetModule,
+    StatusModule
   ],
   providers: [],
   bootstrap: [AppComponent]
