@@ -10,6 +10,7 @@ export class PetListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	console.log('PetListComponent loaded.');
   }
 
 }
