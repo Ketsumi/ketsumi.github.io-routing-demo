@@ -1,0 +1,48 @@
+section
+	color: #ABA
+	background-color: #DED
+	display: grid
+	grid-template-columns: repeat(12, 1fr)
+	grid-template-rows: minmax(400px, 60vh)
+
+	main
+		background-color: #DED
+		grid-column: 1/8
+		display: grid
+		grid-template-rows: repeat(12, 1fr)
+		justify-content: center
+		align-content: center
+
+		header
+			grid-row: 6/7
+			display: grid
+			justify-content: center
+			align-content: end
+
+		nav
+			grid-row: 8/9
+			display: grid
+			justify-content: center
+			align-content: center
+
+			a
+				color: #DED
+				text-decoration: none
+				background-color: #9A9
+				transition: background-color .3s
+				border-radius: 25px
+				display: grid
+				justify-content: center
+				align-content: center
+				padding: 10px 15px
+
+				&:hover
+					background-color: #ABA
+
+	aside
+		color: #DED
+		background-color: #ABA
+		grid-column: 8/14
+		display: grid
+		justify-content: center
+		align-content: center

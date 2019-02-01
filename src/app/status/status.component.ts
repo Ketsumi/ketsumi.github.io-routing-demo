@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./status.component.sass']
 })
 export class StatusComponent implements OnInit {
+	private title: string;
 
-  constructor() { }
+  constructor() {
+  	this.title = 'StatusComponent';
+  }
 
   ngOnInit() {
   }

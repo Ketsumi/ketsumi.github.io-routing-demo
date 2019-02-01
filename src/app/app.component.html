@@ -1,13 +1,21 @@
-<div>App Component</div>
+<div class='layout'>
 
-<nav>
-	<div>
-		<a routerLink='/person/list' routerLinkActive='active'>Person</a>
-	</div>
+	<header class='section'>
+		<section class='header__section header__title'>
+			<h1>{{title}}</h1>
+		</section>
 
-	<div>
-		<a routerLink='/pet/list' routerLinkActive='active'>Pet</a>
-	</div>
-</nav>
+		<nav class='header__section'>
+			<a *ngFor='let route of routes' [routerLink]='route.path'>{{route.name}}</a>
+		</nav>
+	</header>
 
-<router-outlet></router-outlet>
+	<main class='section'>
+		<router-outlet></router-outlet>
+	</main>
+	
+	<footer class='section'>
+		<div>Footer</div>
+	</footer>
+
+</div>

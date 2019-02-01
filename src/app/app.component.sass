@@ -1,0 +1,60 @@
+.layout
+	text-align: center
+	font: 24px arial
+	background-color: #898
+	display: grid
+	grid-template-columns: 1fr minmax(650px, 10fr) 1fr
+	grid-template-rows: minmax(100px, 25vh) minmax(400px, 60vh) minmax(60px, 15vh)
+
+	header
+		color: #676
+		background-color: #BCB
+		grid-column: 2/3
+		grid-row: 1/2
+		display: grid
+		grid-template-rows: 3fr 1fr
+		padding: 10px
+
+		section
+			display: grid
+			justify-content: end
+			align-content: end
+			padding: 5px 0
+
+			h1
+				font: 34px arial
+
+		nav
+			display: grid
+			grid-template-columns: repeat(2, auto)
+			grid-gap: 5px
+			justify-content: end
+
+			a
+				color: #DED
+				text-decoration: none
+				background-color: #9A9
+				transition: background-color .3s
+				border-radius: 25px
+				display: grid
+				align-content: center
+				padding: 0 12px
+
+				&:hover
+					background-color: #ABA
+
+	main
+		color: #ABA
+		background-color: #DED
+		grid-column: 2/3
+		grid-row: 2/3
+
+	footer
+		color: #676
+		background-color: #BCB
+		grid-column: 2/3
+		grid-row: 3/4
+		display: grid
+		justify-content: center
+		align-content: end
+		padding-bottom: 10px

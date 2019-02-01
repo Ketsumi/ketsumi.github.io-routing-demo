@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pet.component.sass']
 })
 export class PetComponent implements OnInit {
+	private title: string;
 
-  constructor() { }
+  constructor() {
+  	this.title = 'PetComponent';
+  }
 
   ngOnInit() {
   	console.log('PetComponent loaded.');

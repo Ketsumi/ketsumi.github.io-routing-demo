@@ -1,5 +1,13 @@
-<p>
-  pet works!
-</p>
+<section>
+	<main>
+		<header>{{title}}</header>
+		
+		<nav>
+			<a [routerLink]='["/pet", { outlets: { aside: "list" } }]'>View List</a>
+		</nav>
+	</main>
 
-<router-outlet></router-outlet>
+	<aside>
+		<router-outlet name='aside'></router-outlet>
+	</aside>
+</section>

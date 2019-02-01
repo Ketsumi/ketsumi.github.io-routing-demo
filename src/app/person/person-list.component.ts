@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./person-list.component.sass']
 })
 export class PersonListComponent implements OnInit {
+	private title: string;
 
-  constructor() { }
+  constructor() {
+  	this.title = 'PersonListComponent';
+  }
 
   ngOnInit() {
   	console.log('PersonListComponent loaded.');
