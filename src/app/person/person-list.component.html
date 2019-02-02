@@ -1,1 +1,19 @@
-<div>{{title}}</div>
+<table>
+	<caption>{{title}}</caption>
+
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>Name</td>
+			<td>Gender</td>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr *ngFor='let person of persons'>
+			<td>{{person.id}}</td>
+			<td>{{person.name}}</td>
+			<td>{{person.gender}}</td>
+		</tr>
+	</tbody>
+</table>
