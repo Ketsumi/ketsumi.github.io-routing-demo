@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Pet } from './pet';
+import { PetService } from './pet.service';
+
 @Component({
   selector: 'app-pet-list',
   templateUrl: './pet-list.component.html',
@@ -7,13 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PetListComponent implements OnInit {
 	private title: string;
+  private pets: Pet[];
 
-  constructor() {
+  constructor(private petService: PetService) {
   	this.title = 'PetListComponent';
   }
 
   ngOnInit() {
   	console.log('PetListComponent loaded.');
+
+    this.petService.get().subscribe(data => {
+      console.log(data);
+      this.pets = data;
+    });
   }
 
 }

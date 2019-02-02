@@ -1,1 +1,19 @@
-<div>{{title}}</div>
+<table>
+	<thead>
+		<caption>{{title}}</caption>
+
+		<tr>
+			<td>ID</td>
+			<td>Name</td>
+			<td>Gender</td>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr *ngFor='let pet of pets'>
+			<td>{{pet.id}}</td>
+			<td>{{pet.name}}</td>
+			<td>{{pet.gender}}</td>
+		</tr>
+	</tbody>
+</table>
