@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./status-code404.component.sass']
 })
 export class StatusCode404Component implements OnInit {
-	private message: string;
+	public message: string;
 
   constructor() {
   	this.message = '404: Page Not Found';

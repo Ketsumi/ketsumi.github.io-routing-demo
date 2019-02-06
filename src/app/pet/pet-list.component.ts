@@ -9,8 +9,8 @@ import { PetService } from './pet.service';
   styleUrls: ['./pet-list.component.sass']
 })
 export class PetListComponent implements OnInit {
-	private title: string;
-  private pets: Pet[];
+	public title: string;
+  public pets: Pet[];
 
   constructor(private petService: PetService) {
   	this.title = 'PetListComponent';

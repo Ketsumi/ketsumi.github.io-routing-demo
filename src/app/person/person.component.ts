@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./person.component.sass']
 })
 export class PersonComponent implements OnInit {
-	private title: string;
+	public title: string;
 
   constructor() {
   	this.title = 'PersonComponent';

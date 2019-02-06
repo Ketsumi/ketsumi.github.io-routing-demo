@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./status.component.sass']
 })
 export class StatusComponent implements OnInit {
-	private title: string;
+	public title: string;
 
   constructor() {
   	this.title = 'StatusComponent';

@@ -9,8 +9,8 @@ import { PersonService } from './person.service';
   styleUrls: ['./person-list.component.sass']
 })
 export class PersonListComponent implements OnInit {
-	private title: string;
-  private persons: Person[];
+	public title: string;
+  public persons: Person[];
 
   constructor(private personService: PersonService) {
   	this.title = 'PersonListComponent';

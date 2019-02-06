@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  private title: string;
-  private routes: any[];
+  public title: string;
+  public routes: any[];
 
   constructor() {
   	this.title = 'RoutingDemo';
